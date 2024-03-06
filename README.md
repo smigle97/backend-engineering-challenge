@@ -1,38 +1,14 @@
 # Backend Engineering Challenge
 
+Welcome to my resolution of the Engineering Challenge
 
-Welcome to our Engineering Challenge repository 🖖
+## How to run
 
-If you found this repository it probably means that you are participating in our recruitment process. Thank you for your time and energy. If that's not the case please take a look at our [openings](https://unbabel.com/careers/) and apply!
+To run the code you only need to have the "event.json" and "unbabel_cli.py" files and run the following command through a terminal: "python3 unbabel_cli.py --input_file events.json --window_size 10"
 
-Please fork this repo before you start working on the challenge, read it careful and take your time and think about the solution. Also, please fork this repository because we will evaluate the code on the fork.
+## Notes
 
-This is an opportunity for us both to work together and get to know each other in a more technical way. If you have any questions please open and issue and we'll reach out to help.
-
-Good luck!
-
-## Challenge Scenario
-
-At Unbabel we deal with a lot of translation data. One of the metrics we use for our clients' SLAs is the delivery time of a translation. 
-
-In the context of this problem, and to keep things simple, our translation flow is going to be modeled as only one event.
-
-### *translation_delivered*
-
-Example:
-
-```json
-{
-	"timestamp": "2018-12-26 18:12:19.903159",
-	"translation_id": "5aa5b2f39f7254a75aa4",
-	"source_language": "en",
-	"target_language": "fr",
-	"client_name": "airliberty",
-	"event_name": "translation_delivered",
-	"duration": 20,
-	"nr_words": 100
-}
-```
+It was developer using macOS Sonoma and the python version 3.12.1
 
 ## Challenge Objective
 
@@ -68,19 +44,3 @@ The output file would be something in the following format.
 {"date": "2018-12-26 18:23:00", "average_delivery_time": 31}
 {"date": "2018-12-26 18:24:00", "average_delivery_time": 42.5}
 ```
-
-#### Notes
-
-Before jumping right into implementation we advise you to think about the solution first. We will evaluate, not only if your solution works but also the following aspects:
-
-+ Simple and easy to read code. Remember that [simple is not easy](https://www.infoq.com/presentations/Simple-Made-Easy)
-+ Comment your code. The easier it is to understand the complex parts, the faster and more positive the feedback will be
-+ Consider the optimizations you can do, given the order of the input lines
-+ Include a README.md that briefly describes how to build and run your code, as well as how to **test it**
-+ Be consistent in your code. 
-
-Feel free to, in your solution, include some your considerations while doing this challenge. We want you to solve this challenge in the language you feel most comfortable with. Our machines run Python (3.7.x or higher) or Go (1.16.x or higher). If you are thinking of using any other programming language please reach out to us first 🙏.
-
-Also, if you have any problem please **open an issue**. 
-
-Good luck and may the force be with you
